@@ -5,17 +5,14 @@ date: "October 14, 2017"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(leaflet)
-```
-
-## R Markdown
-
 Create a web page using R Markdown that features a map created with Leaflet.
 
 Top Ten Places to visit in Brazil
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+```
 ```{r top_ten_places_brazil}
 top_ten_places_brazil <- data.frame(name = c("Noronha-PE","Búzios-RJ", "Jericoacoara-CE", "Porto de Galinhas-PE", "Angra dos Reis-RJ",
                                  "Ilhabela-SP", "Bonito-RS", "Maragogi-AL", "Iguzú-PA", "Paraty-RJ"),
